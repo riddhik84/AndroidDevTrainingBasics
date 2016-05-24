@@ -7,11 +7,15 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class DisplayMessageActivity extends AppCompatActivity {
+
+    public static String LOG_TAG = DisplayMessageActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +36,18 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        TextView messageText = new TextView(this);
-        messageText.setTextSize(40);
-        messageText.setText(message);
+        Log.d(LOG_TAG, "Received Message : " +message);
 
-        RelativeLayout layout = (RelativeLayout) findViewById(R.id.content);
-        layout.addView(messageText);
+//        TextView messageText = new TextView(this);
+//        messageText.setTextSize(40);
+//        if(message != null){
+//            messageText.setText(message);
+//
+//            RelativeLayout layout = (RelativeLayout) findViewById(R.id.fragment_display_message);
+//            layout.addView(messageText);
+//        } else {
+//            Toast.makeText(this, "No message received", Toast.LENGTH_SHORT).show();
+//        }
     }
 
 }
