@@ -33,13 +33,16 @@ public class DisplayMessageActivityFragment extends Fragment {
 
         TextView messageText = new TextView(getActivity());
         messageText.setTextSize(40);
-        if(message != null){
+        if(message != null && message.length() > 1){
             messageText.setText(message);
 
             RelativeLayout layout = (RelativeLayout) rootView.findViewById(R.id.fragment_display_message);
             layout.addView(messageText);
         } else {
-            Toast.makeText(getContext(), "No message received", Toast.LENGTH_SHORT).show();
+            //message = getResources().getString(R.string.blank_message);
+            //messageText.setText(R.string.blank_message);
+
+            Toast.makeText(getContext(), R.string.blank_message, Toast.LENGTH_SHORT).show();
         }
 
         return rootView;

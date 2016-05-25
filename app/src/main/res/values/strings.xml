@@ -4,4 +4,5 @@
     <string name="edit_message_hint">Enter your name</string>
     <string name="send_button">Send</string>
     <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="blank_message">No message!</string>
 </resources>
