@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE = "extra_message";
+    public static final String EXTRA_MESSAGE = "com.riddhik.myapps.androiddevtrainingbasics";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

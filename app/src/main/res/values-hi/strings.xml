@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edit_message_hint">अपना नाम दर्ज करें</string>
+    <string name="send_button">भेजें</string>
+
+</resources>
