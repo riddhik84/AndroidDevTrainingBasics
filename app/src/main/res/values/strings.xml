@@ -5,4 +5,7 @@
     <string name="send_button" translatable="true">Send</string>
     <string name="title_activity_display_message">DisplayMessageActivity</string>
     <string name="blank_message">No message!</string>
+
+    <string name="launch_fragment_button">Launch Fragment</string>
+    <string name="news_text">Android is best mobile development framework! </string>
 </resources>
